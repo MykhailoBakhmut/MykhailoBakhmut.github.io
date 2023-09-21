@@ -1,4 +1,27 @@
 body {
-    background-image: url(file:///C:/Users/mbahm/My%20projects/sitewebtech/MykhailoBakhmut.github.io/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(https://i.ibb.co/xsx0hzt/wallpaperflare-com-wallpaper.jpg);
     background-size: cover; 
 }
+#navmenu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navmenuslot {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid #000; /* Border color */
+    background-color: #f8f8f8; /* Background color */
+  }
+  
+  .navmenulink {
+    text-decoration: none;
+    color: #000; /* Link color */
+  }
+  
+  .navmenulink:hover {
+    color: #fff; /* Link color on hover */
+    background-color: #000; /* Background color on hover */
+  }
+  
