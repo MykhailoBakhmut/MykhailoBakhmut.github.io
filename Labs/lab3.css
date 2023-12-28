@@ -1,0 +1,125 @@
+/* Загальні стилі для структури сайту */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.logo{
+  margin-left: 20px;
+}
+.selected{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(224, 224, 224);
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.other-buttons{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/* Стилі для лівої частини (бокової панелі) */
+.sidebar-left {
+  position:fixed;
+  top: 70px; /* Aligns the sidebar to the top of the viewport */
+  bottom: 0; /* Extends the sidebar to the bottom of the viewport */
+  left: 0; /* Aligns the sidebar to the left side of the viewport */
+  width: 200px; /* Sets the width of the sidebar */
+  background-color: #f9f9f9;
+  padding: 21px;
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds the sidebar height */
+}
+
+.subscriptions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стилі для правої частини (основного контенту) */
+.main-content {
+  position: relative;
+  top: -80px;
+  margin-left: 240px;
+  flex: 1; /* Займає доступний залишок простору */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1; /* Розтягується на доступний простір */
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation-menu {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-left: 0px;
+  height: 30%;
+  width: 100%;
+}
+
+.navigation-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation-menu ul li a {
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+}
+
+
+.video-selection {
+  display: flex;
+  flex-wrap: wrap; /* Автоматичний перенос на новий рядок */
+}
+
+.video-card {
+  width: calc(33.33% - 20px); /* Розмір карточки відео */
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.video-card img {
+  width: 100%;
+}
+
+/* Додаткові стилі для оформлення іншої інформації */
+/* ... */
