@@ -1,0 +1,87 @@
+
+body {
+    margin: 30px;
+    border: 8px solid #ccc;    
+}
+.planner {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    border: 8px solid #ccc;
+    grid-area: header;
+    text-align: start;
+    margin-top: -8px;
+    margin-left: 25px;
+    padding: 20px 0;
+    bp
+  }
+  
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .tasks{
+    border: 8px solid #ccc;
+    background-color: #f0f0f0;
+    padding: 15px;
+  }
+  
+  footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Оформлення чекбоксів */
+  input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Оформлення текстових полів */
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Реакція на зміни розміру екрану (респонсивність) */
+  @media screen and (max-width: 600px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Оновлена розділена область нотаток */
+.notes {
+  border: 8px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 15px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.note {
+  height: 40%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
