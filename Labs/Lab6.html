@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBTech</title>
+    <link rel="stylesheet" href="lab6.css"> 
+
+<main id=app>
+  
+    <h1>Pokéball Sprite Animations</h1>
+  
+    <div class="pokemon">
+      
+      <!-- the 'pkmn' element requires a few divs to
+        be able to render the whole set of animations -->
+      
+      <div class="pkmn exit left">
+        <div class="poke ball">
+          <span class="x">
+            <span class="y">
+              <span class="sprite">
+              </span>
+            </span>
+          </span>
+        </div>
+        <div class="mon"></div>
+        <div class="explode"></div>
+      </div>
+      <div class="pkmn exit right">
+        <div class="premier ball">
+          <span class="x">
+            <span class="y">
+              <span class="sprite">
+              </span>
+            </span>
+          </span>
+        </div>
+        <div class="mon"></div>
+        <div class="explode"></div>
+      </div>
+      
+    </div>
+    
+    <p>This lab was almost fully copied from another <a href="https://codepen.io/simeydotme/details/QWdBOwx"> person project</a> and i fill guilty to not make this task properly and in time</p>
+    
+    <div>
+    <section class="balls">
+      
+      <!-- the 'ball' element can perform all the animations
+        using a single div with psuedo-elements. -->
+      
+      <div class="poke ball"></div>
+      <div class="poke ball side"></div>
+      <div class="poke ball open"></div>
+      <div class="poke ball roll"></div>
+      <div class="poke ball rock"></div>
+      <div class="poke ball bounce"></div>
+      
+    </div>
+    <p style="
+    width: 300px;
+    margin-left: 600px;
+    margin-top: 200px;"
+    >Credit to <a href="https://www.pokecommunity.com/showpost.php?p=9938453&postcount=4">WolfPP from the PokéCommunity forums</a> for the excellent Pokéball sprite work! <br>
+      Pokémon Sprites from <a href="http://pokemondb.net">pokemondb.net</a>, and pokémon exit flourish borrowed from <a href="https://www.artstation.com/artwork/809NQ">Jimena on Artstation.</a>
+    </p>
+    
+  </main>
+
+    <label><input type="checkbox"> slow motion?</label>
